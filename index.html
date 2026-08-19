@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Acessível - UX & Acessibilidade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Interface Inclusiva</h1>
+    <button id="btn-modal" aria-haspopup="dialog">Abrir Modal de Ajuda</button>
+  </header>
+
+  <main>
+    <section>
+      <h2>Sobre o Projeto</h2>
+      <p>Desenvolvendo aplicações web acessíveis com foco em usabilidade e inclusão.</p>
+    </section>
+  </main>
+
+  <!-- Modal de Ajuda -->
+  <div id="modal" class="modal-container" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
+    <div class="modal-content">
+      <h2 id="titulo-modal">Modal de Ajuda</h2>
+      <p>Este é um exemplo de modal acessível com navegação por teclado.</p>
+      <button id="fechar-modal" aria-label="Fechar janela de ajuda">Fechar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
